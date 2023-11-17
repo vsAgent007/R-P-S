@@ -1,0 +1,39 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+x = int(input("Rock for 1 , Paper for 2 , scissor for 3 "))
+if x == 1:
+    print(rock)
+elif x == 2:
+        print(paper)
+elif x == 3:
+        print(scissors)
+else:
+    print("invalid")
+import random
+out = [rock,paper,scissors]
+give = random.randint(0,2)
+print(out[give])
